@@ -23,7 +23,7 @@ jobs:
           node-version: << parameters.node-version >>
       - run : |
                chmod +x ✨special.sh
-            
+               ./✨special.sh
 workflows:
   all-test:
     jobs:
